@@ -21,7 +21,7 @@ ZhanfgBuild is the engineering workspace behind projects maintained under [Zhanf
 | [Zhanfg](https://github.com/Zhanfg) | Maintained products, representative research and user-facing projects |
 | **ZhanfgBuild** | Engineering infrastructure, source bases, upstream/reference forks and supporting repositories |
 
-The repository layout is currently being reorganized around this boundary. Some projects may move between namespaces while their Git history, attribution and project identity are preserved.
+The repository reorganization is complete under the maintained boundary above. Repositories intentionally left under `Zhanfg` remain there by design rather than as unfinished migration work.
 
 ## Engineering principles
 
