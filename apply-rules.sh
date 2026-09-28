@@ -23,7 +23,7 @@ echo "GitHub login: $login"
 repo_map="$(mktemp)"
 trap 'rm -f "$repo_map"' EXIT
 
-gh api "repos/$ORG/.github/contents/repo-map.json"   -H "X-GitHub-Api-Version: $API_VERSION"   --jq .content | tr -d '\n' | base64 -d > "$repo_map"
+gh api "repos/$ORG/.github/contents/repo-map.json"   -H "X-GitHub-Api-Version: $API_VERSION"   --jq .content | python3 -c 'import sys,base64; sys.stdout.buffer.write(base64.b64decode(sys.stdin.read()))' > "$repo_map"
 
 core_repos=(".github" "manifest" "android_kernel_common_oneplus_sm8750")
 
