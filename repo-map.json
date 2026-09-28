@@ -36,399 +36,462 @@
       "visibility": "public",
       "default_branch": "main",
       "archived": false,
-      "status": "active"
+      "status": "active",
+      "protection_profile": "core"
     },
     "ABK": {
       "class": "upstream-fork",
       "visibility": "public",
       "default_branch": "dev",
       "archived": false,
-      "status": "active"
+      "status": "active",
+      "protection_profile": "guarded"
     },
     "android_device_oneplus_enchilada": {
       "class": "source-base",
       "visibility": "public",
       "default_branch": "lineage-23.2",
       "archived": false,
-      "status": "active"
+      "status": "active",
+      "protection_profile": "guarded"
     },
     "android_device_oneplus_sdm845-common": {
       "class": "source-base",
       "visibility": "public",
       "default_branch": "lineage-23.2",
       "archived": false,
-      "status": "active"
+      "status": "active",
+      "protection_profile": "guarded"
     },
     "android_hardware_oneplus": {
       "class": "source-base",
       "visibility": "public",
       "default_branch": "lineage-23.2",
       "archived": false,
-      "status": "active"
+      "status": "active",
+      "protection_profile": "guarded"
     },
     "android_hardware_oplus": {
       "class": "source-base",
       "visibility": "public",
       "default_branch": "lineage-23.2",
       "archived": false,
-      "status": "active"
+      "status": "active",
+      "protection_profile": "guarded"
     },
     "android_kernel_common_oneplus_sm8750": {
       "class": "source-base",
       "visibility": "public",
       "default_branch": "6.6-final",
       "archived": false,
-      "status": "active"
+      "status": "active",
+      "protection_profile": "core"
     },
     "android_kernel_oneplus_sdm845": {
       "class": "source-base",
       "visibility": "public",
       "default_branch": "lineage-23.2-4.19",
       "archived": false,
-      "status": "active"
+      "status": "active",
+      "protection_profile": "guarded"
     },
     "android_kernel_oneplus_sdm845_los": {
       "class": "source-base",
       "visibility": "public",
       "default_branch": "lineage-22.2",
       "archived": false,
-      "status": "active"
+      "status": "active",
+      "protection_profile": "guarded"
     },
     "axymorrsen-app": {
       "class": "infra",
       "visibility": "private",
       "default_branch": "main",
       "archived": false,
-      "status": "active"
+      "status": "active",
+      "protection_profile": "none"
     },
     "axymorrsen-content": {
       "class": "infra",
       "visibility": "private",
       "default_branch": "main",
       "archived": false,
-      "status": "active"
+      "status": "active",
+      "protection_profile": "none"
     },
     "BettBox-Nexus": {
       "class": "prototype",
       "visibility": "public",
       "default_branch": "main",
       "archived": false,
-      "status": "active"
+      "status": "active",
+      "protection_profile": "none"
     },
     "car-glove": {
       "class": "prototype",
       "visibility": "private",
       "default_branch": "main",
       "archived": false,
-      "status": "active"
+      "status": "active",
+      "protection_profile": "none"
     },
     "dae": {
       "class": "upstream-fork",
       "visibility": "public",
       "default_branch": "main",
       "archived": false,
-      "status": "active"
+      "status": "active",
+      "protection_profile": "guarded"
     },
     "Deep-Live-Cam": {
       "class": "upstream-fork",
       "visibility": "public",
       "default_branch": "main",
       "archived": false,
-      "status": "active"
+      "status": "active",
+      "protection_profile": "guarded"
     },
     "edl": {
       "class": "upstream-fork",
       "visibility": "public",
       "default_branch": "master",
       "archived": false,
-      "status": "active"
+      "status": "active",
+      "protection_profile": "guarded"
     },
     "esp-idf": {
       "class": "upstream-fork",
       "visibility": "public",
       "default_branch": "master",
       "archived": false,
-      "status": "active"
+      "status": "active",
+      "protection_profile": "guarded"
     },
     "eta-android": {
       "class": "prototype",
       "visibility": "public",
       "default_branch": "main",
       "archived": false,
-      "status": "active"
+      "status": "active",
+      "protection_profile": "none"
     },
     "fl-studio-natural-language-mcp": {
       "class": "prototype",
       "visibility": "private",
       "default_branch": "main",
       "archived": false,
-      "status": "active"
+      "status": "active",
+      "protection_profile": "none"
     },
     "frameworks_base": {
       "class": "source-base",
       "visibility": "public",
       "default_branch": "cnb",
       "archived": false,
-      "status": "active"
+      "status": "active",
+      "protection_profile": "guarded"
     },
     "github-achievement-lab": {
       "class": "prototype",
       "visibility": "private",
       "default_branch": "main",
       "archived": false,
-      "status": "active"
+      "status": "active",
+      "protection_profile": "none"
     },
     "gyroglove-rover": {
       "class": "prototype",
       "visibility": "private",
       "default_branch": "main",
       "archived": false,
-      "status": "active"
+      "status": "active",
+      "protection_profile": "none"
     },
     "jamesdsp": {
       "class": "upstream-fork",
       "visibility": "public",
       "default_branch": "master",
       "archived": false,
-      "status": "active"
+      "status": "active",
+      "protection_profile": "guarded"
     },
     "JamesDSPManager": {
       "class": "upstream-fork",
       "visibility": "public",
       "default_branch": "master",
       "archived": false,
-      "status": "active"
+      "status": "active",
+      "protection_profile": "guarded"
     },
     "kernel_oneplus_sdm845": {
       "class": "source-base",
       "visibility": "public",
       "default_branch": "master",
       "archived": false,
-      "status": "active"
+      "status": "active",
+      "protection_profile": "guarded"
     },
     "KernelPatch": {
       "class": "internal",
       "visibility": "private",
       "default_branch": "main",
       "archived": false,
-      "status": "active"
+      "status": "active",
+      "protection_profile": "none"
     },
     "KernelSU": {
       "class": "upstream-fork",
       "visibility": "public",
       "default_branch": "main",
       "archived": false,
-      "status": "active"
+      "status": "active",
+      "protection_profile": "guarded"
     },
     "manifest": {
       "class": "source-base",
       "visibility": "public",
       "default_branch": "cnb",
       "archived": false,
-      "status": "active"
+      "status": "active",
+      "protection_profile": "core"
     },
     "meta-rehybrid_mount": {
       "class": "upstream-fork",
       "visibility": "public",
       "default_branch": "main",
       "archived": false,
-      "status": "active"
+      "status": "active",
+      "protection_profile": "guarded"
     },
     "MFGA-Font-Builder": {
       "class": "internal",
       "visibility": "private",
       "default_branch": "main",
       "archived": false,
-      "status": "active"
+      "status": "active",
+      "protection_profile": "none"
     },
     "mine-craft": {
       "class": "prototype",
       "visibility": "private",
       "default_branch": "main",
       "archived": false,
-      "status": "active"
+      "status": "active",
+      "protection_profile": "none"
     },
     "nomount": {
       "class": "upstream-fork",
       "visibility": "public",
       "default_branch": "master",
       "archived": false,
-      "status": "active"
+      "status": "active",
+      "protection_profile": "guarded"
     },
     "oh-my-pi": {
       "class": "upstream-fork",
       "visibility": "public",
       "default_branch": "main",
       "archived": false,
-      "status": "active"
+      "status": "active",
+      "protection_profile": "guarded"
     },
     "OhMyKeymint": {
       "class": "upstream-fork",
       "visibility": "public",
       "default_branch": "master",
       "archived": false,
-      "status": "active"
+      "status": "active",
+      "protection_profile": "guarded"
     },
     "OnePlus13-Dolby-Coexist": {
       "class": "internal",
       "visibility": "private",
       "default_branch": "main",
       "archived": false,
-      "status": "active"
+      "status": "active",
+      "protection_profile": "none"
     },
     "oppo_decrypt": {
       "class": "upstream-fork",
       "visibility": "public",
       "default_branch": "master",
       "archived": false,
-      "status": "active"
+      "status": "active",
+      "protection_profile": "guarded"
     },
     "packages_apps_Evolver": {
       "class": "source-base",
       "visibility": "public",
       "default_branch": "cnb",
       "archived": false,
-      "status": "active"
+      "status": "active",
+      "protection_profile": "guarded"
     },
     "packages_apps_Settings": {
       "class": "source-base",
       "visibility": "public",
       "default_branch": "cnb",
       "archived": false,
-      "status": "active"
+      "status": "active",
+      "protection_profile": "guarded"
     },
     "PlayIntegrityFix": {
       "class": "upstream-fork",
       "visibility": "public",
       "default_branch": "inject_s",
       "archived": false,
-      "status": "active"
+      "status": "active",
+      "protection_profile": "guarded"
     },
     "proprietary_vendor_oneplus_enchilada": {
       "class": "source-base",
       "visibility": "public",
       "default_branch": "lineage-22.2",
       "archived": false,
-      "status": "active"
+      "status": "active",
+      "protection_profile": "guarded"
     },
     "proprietary_vendor_oneplus_sdm845-common": {
       "class": "source-base",
       "visibility": "public",
       "default_branch": "lineage-22.2",
       "archived": false,
-      "status": "active"
+      "status": "active",
+      "protection_profile": "guarded"
     },
     "qcom-ptool": {
       "class": "upstream-fork",
       "visibility": "public",
       "default_branch": "main",
       "archived": false,
-      "status": "active"
+      "status": "active",
+      "protection_profile": "guarded"
     },
     "ReSukiSU": {
       "class": "upstream-fork",
       "visibility": "public",
       "default_branch": "main",
       "archived": false,
-      "status": "active"
+      "status": "active",
+      "protection_profile": "guarded"
     },
     "ReSukiSU_Patches": {
       "class": "upstream-fork",
       "visibility": "public",
       "default_branch": "main",
       "archived": false,
-      "status": "active"
+      "status": "active",
+      "protection_profile": "guarded"
     },
     "rqlite": {
       "class": "upstream-fork",
       "visibility": "public",
       "default_branch": "master",
       "archived": false,
-      "status": "active"
+      "status": "active",
+      "protection_profile": "guarded"
     },
     "Scene-Port-Hider-by-eBPF": {
       "class": "upstream-fork",
       "visibility": "public",
       "default_branch": "main",
       "archived": false,
-      "status": "active"
+      "status": "active",
+      "protection_profile": "guarded"
     },
     "sdm845_resukisu": {
       "class": "internal",
       "visibility": "private",
       "default_branch": "main",
       "archived": false,
-      "status": "active"
+      "status": "active",
+      "protection_profile": "none"
     },
     "sing-box": {
       "class": "upstream-fork",
       "visibility": "public",
       "default_branch": "testing",
       "archived": false,
-      "status": "active"
+      "status": "active",
+      "protection_profile": "guarded"
     },
     "SmartSkateboard": {
       "class": "prototype",
       "visibility": "private",
       "default_branch": "master",
       "archived": false,
-      "status": "active"
+      "status": "active",
+      "protection_profile": "none"
     },
     "SO-ARM100": {
       "class": "upstream-fork",
       "visibility": "public",
       "default_branch": "main",
       "archived": false,
-      "status": "active"
+      "status": "active",
+      "protection_profile": "guarded"
     },
     "SukiSU_KernelPatch_patch": {
       "class": "upstream-fork",
       "visibility": "public",
       "default_branch": "main",
       "archived": false,
-      "status": "active"
+      "status": "active",
+      "protection_profile": "guarded"
     },
     "SukiSU_patch": {
       "class": "upstream-fork",
       "visibility": "public",
       "default_branch": "main",
       "archived": false,
-      "status": "active"
+      "status": "active",
+      "protection_profile": "guarded"
     },
     "SukiSU-Ultra": {
       "class": "upstream-fork",
       "visibility": "public",
       "default_branch": "main",
       "archived": false,
-      "status": "active"
+      "status": "active",
+      "protection_profile": "guarded"
     },
     "TCP_Optimiser": {
       "class": "internal",
       "visibility": "private",
       "default_branch": "main",
       "archived": false,
-      "status": "active"
+      "status": "active",
+      "protection_profile": "none"
     },
     "vendor_evolution": {
       "class": "source-base",
       "visibility": "public",
       "default_branch": "cnb",
       "archived": false,
-      "status": "active"
+      "status": "active",
+      "protection_profile": "guarded"
     },
     "workbench-platform": {
       "class": "infra",
       "visibility": "private",
       "default_branch": "main",
       "archived": false,
-      "status": "active"
+      "status": "active",
+      "protection_profile": "plan-blocked"
     },
     "yuezhou-pop-infra": {
       "class": "infra",
       "visibility": "public",
       "default_branch": "main",
       "archived": false,
-      "status": "active"
+      "status": "active",
+      "protection_profile": "guarded"
     }
+  },
+  "protection_profiles": {
+    "core": "default branch: no delete, no force-push, pull request required, review threads resolved, zero required external approvals",
+    "guarded": "default branch: no delete, no force-push; direct fast-forward pushes allowed",
+    "plan-blocked": "private repository protection unavailable on current GitHub plan; keep repository private",
+    "none": "no organization baseline protection applied"
   }
 }
