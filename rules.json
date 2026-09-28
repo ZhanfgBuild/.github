@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-09-29",
+  "organization": "ZhanfgBuild",
+  "api_version": "2026-03-10",
+  "profiles": {
+    "core": {
+      "applies_to": [
+        ".github",
+        "manifest",
+        "android_kernel_common_oneplus_sm8750"
+      ],
+      "target": "default_branch",
+      "rules": [
+        "deletion",
+        "non_fast_forward",
+        "pull_request"
+      ],
+      "pull_request": {
+        "required_approving_review_count": 0,
+        "required_review_thread_resolution": true,
+        "dismiss_stale_reviews_on_push": false,
+        "require_code_owner_review": false,
+        "require_last_push_approval": false,
+        "allowed_merge_methods": [
+          "merge",
+          "squash",
+          "rebase"
+        ]
+      }
+    },
+    "guarded": {
+      "applies_to_classes": [
+        "source-base",
+        "upstream-fork"
+      ],
+      "include_public_infra": [
+        "yuezhou-pop-infra"
+      ],
+      "exclude": [
+        ".github",
+        "manifest",
+        "android_kernel_common_oneplus_sm8750"
+      ],
+      "target": "default_branch",
+      "rules": [
+        "deletion",
+        "non_fast_forward"
+      ]
+    },
+    "plan_blocked": {
+      "repositories": [
+        "workbench-platform"
+      ],
+      "reason": "Private repository protections/rulesets are unavailable on the current GitHub plan. Keep private; do not weaken visibility just to enable rules."
+    }
+  }
+}
