@@ -23,6 +23,18 @@ ZhanfgBuild is the engineering workspace behind projects maintained under [Zhanf
 
 The repository reorganization is complete under the maintained boundary above. Repositories intentionally left under `Zhanfg` remain there by design rather than as unfinished migration work.
 
+## Repository map
+
+Repositories are classified in the machine-readable [repo-map.json](../repo-map.json):
+
+- **infra** — build, deployment, content and organization infrastructure;
+- **source-base** — kernel/ROM/device/vendor/framework source bases and manifests;
+- **upstream-fork** — maintained/reference forks with upstream attribution preserved;
+- **prototype** — experimental applications, hardware and research work;
+- **internal** — private engineering components and supporting implementation repositories.
+
+Repository-local policy files override organization defaults.
+
 ## Engineering principles
 
 - Preserve upstream history and attribution.
