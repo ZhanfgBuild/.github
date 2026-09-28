@@ -6,6 +6,9 @@ This repository provides organization-wide defaults and machine-readable reposit
 
 - [profile/README.md](profile/README.md) — public organization profile.
 - [repo-map.json](repo-map.json) — repository classification and policy metadata for humans and Agents.
+- [RULES.md](RULES.md) — branch/ruleset protection policy.
+- [rules.json](rules.json) — machine-readable protection profiles.
+- [apply-rules.sh](apply-rules.sh) — idempotent owner/admin ruleset installer (dry-run by default).
 - [CONTRIBUTING.md](CONTRIBUTING.md) — default contribution guidance.
 - [SECURITY.md](SECURITY.md) — default security reporting guidance.
 - [SUPPORT.md](SUPPORT.md) — default support routing.
