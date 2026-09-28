@@ -1,0 +1,434 @@
+{
+  "schema_version": 1,
+  "organization": "ZhanfgBuild",
+  "updated_at": "2026-09-29",
+  "source_of_truth": "ZhanfgBuild/.github/repo-map.json",
+  "class_policy": {
+    "infra": {
+      "intent": "Build, deployment, organization, content, and engineering infrastructure.",
+      "change_policy": "Small reviewed changes; validate external integrations and rollback paths.",
+      "upstream_sync": false
+    },
+    "source-base": {
+      "intent": "Kernel/ROM/device/vendor/framework source bases and manifests.",
+      "change_policy": "History-sensitive; preserve branch intent; avoid unrelated cleanup; require build or manifest validation where applicable.",
+      "upstream_sync": "tracked-per-repository"
+    },
+    "upstream-fork": {
+      "intent": "Reference or maintained downstream forks of external upstream projects.",
+      "change_policy": "Preserve attribution; keep local patch delta explicit; prefer upstream-first fixes where practical.",
+      "upstream_sync": true
+    },
+    "prototype": {
+      "intent": "Experimental applications, hardware work, and research prototypes.",
+      "change_policy": "Fast iteration allowed; do not claim stability without evidence.",
+      "upstream_sync": false
+    },
+    "internal": {
+      "intent": "Private engineering components, builders, patches, and supporting implementation repositories.",
+      "change_policy": "Optimize for maintainability and reproducible internal workflows; avoid exposing private material.",
+      "upstream_sync": "project-specific"
+    }
+  },
+  "repositories": {
+    ".github": {
+      "class": "infra",
+      "visibility": "public",
+      "default_branch": "main",
+      "archived": false,
+      "status": "active"
+    },
+    "ABK": {
+      "class": "upstream-fork",
+      "visibility": "public",
+      "default_branch": "dev",
+      "archived": false,
+      "status": "active"
+    },
+    "android_device_oneplus_enchilada": {
+      "class": "source-base",
+      "visibility": "public",
+      "default_branch": "lineage-23.2",
+      "archived": false,
+      "status": "active"
+    },
+    "android_device_oneplus_sdm845-common": {
+      "class": "source-base",
+      "visibility": "public",
+      "default_branch": "lineage-23.2",
+      "archived": false,
+      "status": "active"
+    },
+    "android_hardware_oneplus": {
+      "class": "source-base",
+      "visibility": "public",
+      "default_branch": "lineage-23.2",
+      "archived": false,
+      "status": "active"
+    },
+    "android_hardware_oplus": {
+      "class": "source-base",
+      "visibility": "public",
+      "default_branch": "lineage-23.2",
+      "archived": false,
+      "status": "active"
+    },
+    "android_kernel_common_oneplus_sm8750": {
+      "class": "source-base",
+      "visibility": "public",
+      "default_branch": "6.6-final",
+      "archived": false,
+      "status": "active"
+    },
+    "android_kernel_oneplus_sdm845": {
+      "class": "source-base",
+      "visibility": "public",
+      "default_branch": "lineage-23.2-4.19",
+      "archived": false,
+      "status": "active"
+    },
+    "android_kernel_oneplus_sdm845_los": {
+      "class": "source-base",
+      "visibility": "public",
+      "default_branch": "lineage-22.2",
+      "archived": false,
+      "status": "active"
+    },
+    "axymorrsen-app": {
+      "class": "infra",
+      "visibility": "private",
+      "default_branch": "main",
+      "archived": false,
+      "status": "active"
+    },
+    "axymorrsen-content": {
+      "class": "infra",
+      "visibility": "private",
+      "default_branch": "main",
+      "archived": false,
+      "status": "active"
+    },
+    "BettBox-Nexus": {
+      "class": "prototype",
+      "visibility": "public",
+      "default_branch": "main",
+      "archived": false,
+      "status": "active"
+    },
+    "car-glove": {
+      "class": "prototype",
+      "visibility": "private",
+      "default_branch": "main",
+      "archived": false,
+      "status": "active"
+    },
+    "dae": {
+      "class": "upstream-fork",
+      "visibility": "public",
+      "default_branch": "main",
+      "archived": false,
+      "status": "active"
+    },
+    "Deep-Live-Cam": {
+      "class": "upstream-fork",
+      "visibility": "public",
+      "default_branch": "main",
+      "archived": false,
+      "status": "active"
+    },
+    "edl": {
+      "class": "upstream-fork",
+      "visibility": "public",
+      "default_branch": "master",
+      "archived": false,
+      "status": "active"
+    },
+    "esp-idf": {
+      "class": "upstream-fork",
+      "visibility": "public",
+      "default_branch": "master",
+      "archived": false,
+      "status": "active"
+    },
+    "eta-android": {
+      "class": "prototype",
+      "visibility": "public",
+      "default_branch": "main",
+      "archived": false,
+      "status": "active"
+    },
+    "fl-studio-natural-language-mcp": {
+      "class": "prototype",
+      "visibility": "private",
+      "default_branch": "main",
+      "archived": false,
+      "status": "active"
+    },
+    "frameworks_base": {
+      "class": "source-base",
+      "visibility": "public",
+      "default_branch": "cnb",
+      "archived": false,
+      "status": "active"
+    },
+    "github-achievement-lab": {
+      "class": "prototype",
+      "visibility": "private",
+      "default_branch": "main",
+      "archived": false,
+      "status": "active"
+    },
+    "gyroglove-rover": {
+      "class": "prototype",
+      "visibility": "private",
+      "default_branch": "main",
+      "archived": false,
+      "status": "active"
+    },
+    "jamesdsp": {
+      "class": "upstream-fork",
+      "visibility": "public",
+      "default_branch": "master",
+      "archived": false,
+      "status": "active"
+    },
+    "JamesDSPManager": {
+      "class": "upstream-fork",
+      "visibility": "public",
+      "default_branch": "master",
+      "archived": false,
+      "status": "active"
+    },
+    "kernel_oneplus_sdm845": {
+      "class": "source-base",
+      "visibility": "public",
+      "default_branch": "master",
+      "archived": false,
+      "status": "active"
+    },
+    "KernelPatch": {
+      "class": "internal",
+      "visibility": "private",
+      "default_branch": "main",
+      "archived": false,
+      "status": "active"
+    },
+    "KernelSU": {
+      "class": "upstream-fork",
+      "visibility": "public",
+      "default_branch": "main",
+      "archived": false,
+      "status": "active"
+    },
+    "manifest": {
+      "class": "source-base",
+      "visibility": "public",
+      "default_branch": "cnb",
+      "archived": false,
+      "status": "active"
+    },
+    "meta-rehybrid_mount": {
+      "class": "upstream-fork",
+      "visibility": "public",
+      "default_branch": "main",
+      "archived": false,
+      "status": "active"
+    },
+    "MFGA-Font-Builder": {
+      "class": "internal",
+      "visibility": "private",
+      "default_branch": "main",
+      "archived": false,
+      "status": "active"
+    },
+    "mine-craft": {
+      "class": "prototype",
+      "visibility": "private",
+      "default_branch": "main",
+      "archived": false,
+      "status": "active"
+    },
+    "nomount": {
+      "class": "upstream-fork",
+      "visibility": "public",
+      "default_branch": "master",
+      "archived": false,
+      "status": "active"
+    },
+    "oh-my-pi": {
+      "class": "upstream-fork",
+      "visibility": "public",
+      "default_branch": "main",
+      "archived": false,
+      "status": "active"
+    },
+    "OhMyKeymint": {
+      "class": "upstream-fork",
+      "visibility": "public",
+      "default_branch": "master",
+      "archived": false,
+      "status": "active"
+    },
+    "OnePlus13-Dolby-Coexist": {
+      "class": "internal",
+      "visibility": "private",
+      "default_branch": "main",
+      "archived": false,
+      "status": "active"
+    },
+    "oppo_decrypt": {
+      "class": "upstream-fork",
+      "visibility": "public",
+      "default_branch": "master",
+      "archived": false,
+      "status": "active"
+    },
+    "packages_apps_Evolver": {
+      "class": "source-base",
+      "visibility": "public",
+      "default_branch": "cnb",
+      "archived": false,
+      "status": "active"
+    },
+    "packages_apps_Settings": {
+      "class": "source-base",
+      "visibility": "public",
+      "default_branch": "cnb",
+      "archived": false,
+      "status": "active"
+    },
+    "PlayIntegrityFix": {
+      "class": "upstream-fork",
+      "visibility": "public",
+      "default_branch": "inject_s",
+      "archived": false,
+      "status": "active"
+    },
+    "proprietary_vendor_oneplus_enchilada": {
+      "class": "source-base",
+      "visibility": "public",
+      "default_branch": "lineage-22.2",
+      "archived": false,
+      "status": "active"
+    },
+    "proprietary_vendor_oneplus_sdm845-common": {
+      "class": "source-base",
+      "visibility": "public",
+      "default_branch": "lineage-22.2",
+      "archived": false,
+      "status": "active"
+    },
+    "qcom-ptool": {
+      "class": "upstream-fork",
+      "visibility": "public",
+      "default_branch": "main",
+      "archived": false,
+      "status": "active"
+    },
+    "ReSukiSU": {
+      "class": "upstream-fork",
+      "visibility": "public",
+      "default_branch": "main",
+      "archived": false,
+      "status": "active"
+    },
+    "ReSukiSU_Patches": {
+      "class": "upstream-fork",
+      "visibility": "public",
+      "default_branch": "main",
+      "archived": false,
+      "status": "active"
+    },
+    "rqlite": {
+      "class": "upstream-fork",
+      "visibility": "public",
+      "default_branch": "master",
+      "archived": false,
+      "status": "active"
+    },
+    "Scene-Port-Hider-by-eBPF": {
+      "class": "upstream-fork",
+      "visibility": "public",
+      "default_branch": "main",
+      "archived": false,
+      "status": "active"
+    },
+    "sdm845_resukisu": {
+      "class": "internal",
+      "visibility": "private",
+      "default_branch": "main",
+      "archived": false,
+      "status": "active"
+    },
+    "sing-box": {
+      "class": "upstream-fork",
+      "visibility": "public",
+      "default_branch": "testing",
+      "archived": false,
+      "status": "active"
+    },
+    "SmartSkateboard": {
+      "class": "prototype",
+      "visibility": "private",
+      "default_branch": "master",
+      "archived": false,
+      "status": "active"
+    },
+    "SO-ARM100": {
+      "class": "upstream-fork",
+      "visibility": "public",
+      "default_branch": "main",
+      "archived": false,
+      "status": "active"
+    },
+    "SukiSU_KernelPatch_patch": {
+      "class": "upstream-fork",
+      "visibility": "public",
+      "default_branch": "main",
+      "archived": false,
+      "status": "active"
+    },
+    "SukiSU_patch": {
+      "class": "upstream-fork",
+      "visibility": "public",
+      "default_branch": "main",
+      "archived": false,
+      "status": "active"
+    },
+    "SukiSU-Ultra": {
+      "class": "upstream-fork",
+      "visibility": "public",
+      "default_branch": "main",
+      "archived": false,
+      "status": "active"
+    },
+    "TCP_Optimiser": {
+      "class": "internal",
+      "visibility": "private",
+      "default_branch": "main",
+      "archived": false,
+      "status": "active"
+    },
+    "vendor_evolution": {
+      "class": "source-base",
+      "visibility": "public",
+      "default_branch": "cnb",
+      "archived": false,
+      "status": "active"
+    },
+    "workbench-platform": {
+      "class": "infra",
+      "visibility": "private",
+      "default_branch": "main",
+      "archived": false,
+      "status": "active"
+    },
+    "yuezhou-pop-infra": {
+      "class": "infra",
+      "visibility": "public",
+      "default_branch": "main",
+      "archived": false,
+      "status": "active"
+    }
+  }
+}
