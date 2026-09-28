@@ -1,0 +1,40 @@
+name: Change request
+description: Propose a focused engineering change
+title: "[Change] "
+labels: []
+body:
+  - type: textarea
+    id: goal
+    attributes:
+      label: Goal
+      description: What should change, and why?
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Proposed scope
+      description: What should be changed, and what should explicitly remain untouched?
+    validations:
+      required: true
+  - type: dropdown
+    id: impact
+    attributes:
+      label: Expected impact
+      options:
+        - Local code only
+        - Build / CI
+        - Release / packaging
+        - Kernel / ROM source
+        - Upstream tracking
+        - Deployment / external service
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: validation
+    attributes:
+      label: Suggested validation
+      description: How should the change be verified?
+    validations:
+      required: false
