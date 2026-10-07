@@ -1,53 +1,37 @@
-<p align="center"><img src="./assets/header.svg" alt="ZhanfgBuild" width="100%"></p>
+<p align="center"><img src="./assets/header.svg" alt="ZhanfgBuild — engineering annex" width="100%"></p>
 
-**ZhanfgBuild is an engineering annex, not a product portfolio.** It holds history-sensitive source trees, build/release plumbing, tracked upstreams and supporting repositories used by work published elsewhere.
+<p align="center"><sub>source trees / build plumbing / downstream maintenance / release support</sub></p>
 
-## 01 / repository roles
+**ZhanfgBuild is the engineering annex behind the public project surface.** It is not a second product catalogue. Repositories here are source bases, build systems, tracked upstreams, or support infrastructure; original ownership is never implied for upstream-derived work.
 
-| Class | What belongs here |
-| --- | --- |
-| <code>source-base</code> | kernel / ROM / device / vendor / framework trees where branch intent and history matter |
-| <code>upstream-fork</code> | external projects retained for tracking or downstream patches; attribution remains upstream-first |
-| <code>infra</code> | organization control, deployment, build, release and content infrastructure |
-| <code>prototype</code> | engineering experiments that do not imply product stability |
-| <code>internal</code> | private builders, patches and supporting implementation surfaces |
+## 01 / source bases
 
-The machine-readable classification remains [repo-map.json](../repo-map.json); repository-local documentation remains authoritative for project-specific behavior.
+| Line | Role | Boundary |
+| --- | --- | --- |
+| [android_kernel_common_oneplus_sm8750](https://github.com/ZhanfgBuild/android_kernel_common_oneplus_sm8750) | OnePlus 13 custom common-kernel line | common tree only; the full OKI build remains controlled by [Zhanfg/OnePlus13-kernel](https://github.com/Zhanfg/OnePlus13-kernel) |
+| OnePlus 6 / SDM845 repositories | kernel, device, hardware and vendor source bases | branch-sensitive Android/Lineage engineering inputs |
+| Android platform repositories | framework/settings/evolution source bases | maintained as source trees rather than standalone products |
 
-## 02 / active public lines
+The OnePlus 13 common tree currently contains explicit upstream-resolution workflows and documents unresolved vendor/common integration. A newer local kernel version is not presented as proof of full device compatibility.
 
-<table>
-<tr>
-<td width="50%" valign="top">
-<sub>SM8750 / ONEPLUS 13</sub><br>
-<strong><a href="https://github.com/ZhanfgBuild/android_kernel_common_oneplus_sm8750">android_kernel_common_oneplus_sm8750</a></strong><br>
-A full Android common-kernel source tree with dedicated upstream-sync, conflict-export and resolution-verification workflows. It is a source base, not a standalone flashable product.
-</td>
-<td width="50%" valign="top">
-<sub>SDM845 / ONEPLUS 6</sub><br>
-<strong>device + kernel + vendor source family</strong><br>
-Branch-sensitive device, hardware, kernel and vendor repositories support current OnePlus 6 / Android source work. These repositories are kept separate because their histories and consumers are separate.
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-<sub>ANDROID PLATFORM</sub><br>
-<strong>framework / Settings / Evolver / manifest sources</strong><br>
-Platform source bases are maintained as build inputs rather than advertised as independent applications.
-</td>
-<td width="50%" valign="top">
-<sub>TRACKED UPSTREAMS</sub><br>
-<strong>KernelSU · ReSukiSU · sing-box · dae · JamesDSP · rqlite · esp-idf · …</strong><br>
-Mirrors and maintained forks keep their upstream identity. Local deltas should stay reviewable and reversible.
-</td>
-</tr>
-</table>
+## 02 / build & support
 
-## 03 / operating boundary
+This namespace also carries CI/release plumbing, packaging infrastructure, internal builders and project-specific support repositories. Private tooling stays private; public pages describe the boundary, not its credentials or restricted inputs.
 
-- preserve Git history, license and upstream provenance;
-- prefer reviewable downstream deltas over opaque source replacement;
-- keep build evidence separate from runtime/device evidence;
-- keep credentials, signing material, private device data and restricted payloads out of public repositories.
+A build passing CI means the build path passed. It does **not** become a runtime, device, or release validation claim unless the owning project records that evidence separately.
 
-<p align="center"><sub><a href="https://github.com/Zhanfg">main project surface</a> · <a href="https://axymorrsen.cc">axymorrsen.cc</a></sub></p>
+## 03 / tracked upstreams
+
+Public repositories such as <code>ReSukiSU</code>, <code>KernelSU</code>, <code>OhMyKeymint</code>, <code>sing-box</code>, <code>dae</code>, <code>JamesDSP</code>, <code>rqlite</code> and <code>esp-idf</code> are upstream-derived or downstream-maintained workspaces. Their upstream licenses, history and attribution remain authoritative.
+
+Local changes should stay reviewable against upstream instead of being presented as independent project ownership.
+
+## 04 / control plane
+
+[repo-map.json](../repo-map.json) is the machine-readable classification authority for this organization. It distinguishes:
+
+<code>infra</code> · <code>source-base</code> · <code>upstream-fork</code> · <code>prototype</code> · <code>internal</code>
+
+The public project surface remains [Zhanfg](https://github.com/Zhanfg). This organization exists to keep source provenance, build mechanics and supporting engineering separate from user-facing project identity.
+
+<p align="center"><sub><a href="https://github.com/Zhanfg">projects</a> · <a href="https://axymorrsen.cc">axymorrsen.cc</a></sub></p>
