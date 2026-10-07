@@ -1,26 +1,53 @@
 <p align="center"><img src="./assets/header.svg" alt="ZhanfgBuild" width="100%"></p>
 
-<p align="center"><code>source bases</code>&nbsp;&nbsp;·&nbsp;&nbsp;<code>build & release</code>&nbsp;&nbsp;·&nbsp;&nbsp;<code>tracked upstreams</code>&nbsp;&nbsp;·&nbsp;&nbsp;<code>engineering infrastructure</code></p>
+**ZhanfgBuild is an engineering annex, not a product portfolio.** It holds history-sensitive source trees, build/release plumbing, tracked upstreams and supporting repositories used by work published elsewhere.
 
-**ZhanfgBuild is an engineering annex, not a product catalog.**  
-It holds the source trees, CI/release plumbing, upstream-derived code, and support repositories that sit behind work published from [Zhanfg](https://github.com/Zhanfg).
+## 01 / repository roles
 
-### source-base lines
+| Class | What belongs here |
+| --- | --- |
+| <code>source-base</code> | kernel / ROM / device / vendor / framework trees where branch intent and history matter |
+| <code>upstream-fork</code> | external projects retained for tracking or downstream patches; attribution remains upstream-first |
+| <code>infra</code> | organization control, deployment, build, release and content infrastructure |
+| <code>prototype</code> | engineering experiments that do not imply product stability |
+| <code>internal</code> | private builders, patches and supporting implementation surfaces |
 
-- **OnePlus 13 / SM8750** — [android_kernel_common_oneplus_sm8750](https://github.com/ZhanfgBuild/android_kernel_common_oneplus_sm8750) carries the custom common-kernel line and upstream-resolution workflows used by the OnePlus 13 kernel project.
-- **OnePlus 6 / SDM845** — kernel, device, hardware, and vendor source repositories are kept as branch-sensitive source bases for current Android/Lineage work.
-- **CNB / Android platform work** — `frameworks_base`, `packages_apps_Settings`, `packages_apps_Evolver`, `vendor_evolution`, and `manifest` are maintained as source-base repositories rather than standalone products.
+The machine-readable classification remains [repo-map.json](../repo-map.json); repository-local documentation remains authoritative for project-specific behavior.
 
-### tracked upstreams
+## 02 / active public lines
 
-Repositories such as **ReSukiSU, KernelSU, sing-box, dae, JamesDSP, rqlite, esp-idf** and others remain explicitly upstream-derived. Local work should preserve attribution and keep downstream deltas reviewable.
+<table>
+<tr>
+<td width="50%" valign="top">
+<sub>SM8750 / ONEPLUS 13</sub><br>
+<strong><a href="https://github.com/ZhanfgBuild/android_kernel_common_oneplus_sm8750">android_kernel_common_oneplus_sm8750</a></strong><br>
+A full Android common-kernel source tree with dedicated upstream-sync, conflict-export and resolution-verification workflows. It is a source base, not a standalone flashable product.
+</td>
+<td width="50%" valign="top">
+<sub>SDM845 / ONEPLUS 6</sub><br>
+<strong>device + kernel + vendor source family</strong><br>
+Branch-sensitive device, hardware, kernel and vendor repositories support current OnePlus 6 / Android source work. These repositories are kept separate because their histories and consumers are separate.
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+<sub>ANDROID PLATFORM</sub><br>
+<strong>framework / Settings / Evolver / manifest sources</strong><br>
+Platform source bases are maintained as build inputs rather than advertised as independent applications.
+</td>
+<td width="50%" valign="top">
+<sub>TRACKED UPSTREAMS</sub><br>
+<strong>KernelSU · ReSukiSU · sing-box · dae · JamesDSP · rqlite · esp-idf · …</strong><br>
+Mirrors and maintained forks keep their upstream identity. Local deltas should stay reviewable and reversible.
+</td>
+</tr>
+</table>
 
-### boundary
+## 03 / operating boundary
 
-The machine-readable authority is [repo-map.json](../repo-map.json). It classifies each repository as:
-
-`infra` · `source-base` · `upstream-fork` · `prototype` · `internal`
-
-That distinction is intentional: a mirrored or modified upstream repository is not presented as original project ownership, and a successful build is not treated as runtime validation.
+- preserve Git history, license and upstream provenance;
+- prefer reviewable downstream deltas over opaque source replacement;
+- keep build evidence separate from runtime/device evidence;
+- keep credentials, signing material, private device data and restricted payloads out of public repositories.
 
 <p align="center"><sub><a href="https://github.com/Zhanfg">main project surface</a> · <a href="https://axymorrsen.cc">axymorrsen.cc</a></sub></p>
