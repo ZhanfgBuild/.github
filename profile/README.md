@@ -1,46 +1,26 @@
-<h1 align="center">ZhanfgBuild</h1>
+<p align="center"><img src="./assets/header.svg" alt="ZhanfgBuild" width="100%"></p>
 
-<p align="center">
-  Engineering workspace for Axymorrsen · Android/Linux · Build systems · Source bases · Infrastructure
-</p>
+<p align="center"><code>source bases</code>&nbsp;&nbsp;·&nbsp;&nbsp;<code>build & release</code>&nbsp;&nbsp;·&nbsp;&nbsp;<code>tracked upstreams</code>&nbsp;&nbsp;·&nbsp;&nbsp;<code>engineering infrastructure</code></p>
 
-ZhanfgBuild is the engineering workspace behind projects maintained under [Zhanfg](https://github.com/Zhanfg). It holds build and release infrastructure, source bases, upstream/reference forks, deployment support and other repositories that are useful to engineering work but do not need to live in the personal project namespace.
+**ZhanfgBuild is an engineering annex, not a product catalog.**  
+It holds the source trees, CI/release plumbing, upstream-derived code, and support repositories that sit behind work published from [Zhanfg](https://github.com/Zhanfg).
 
-## Scope
+### source-base lines
 
-- **Build & release** — reproducible CI, packaging, validation and release support.
-- **Android / kernel sources** — source bases, device trees, manifests and low-level integration repositories.
-- **Upstream / reference work** — maintained forks, patch staging and compatibility experiments with attribution preserved.
-- **Infrastructure** — website/content pipelines, deployment support and internal-facing engineering services.
-- **Prototypes & tooling** — hardware prototypes, build helpers and supporting utilities.
+- **OnePlus 13 / SM8750** — [android_kernel_common_oneplus_sm8750](https://github.com/ZhanfgBuild/android_kernel_common_oneplus_sm8750) carries the custom common-kernel line and upstream-resolution workflows used by the OnePlus 13 kernel project.
+- **OnePlus 6 / SDM845** — kernel, device, hardware, and vendor source repositories are kept as branch-sensitive source bases for current Android/Lineage work.
+- **CNB / Android platform work** — `frameworks_base`, `packages_apps_Settings`, `packages_apps_Evolver`, `vendor_evolution`, and `manifest` are maintained as source-base repositories rather than standalone products.
 
-## Repository boundary
+### tracked upstreams
 
-| Space | Intended contents |
-| --- | --- |
-| [Zhanfg](https://github.com/Zhanfg) | Maintained products, representative research and user-facing projects |
-| **ZhanfgBuild** | Engineering infrastructure, source bases, upstream/reference forks and supporting repositories |
+Repositories such as **ReSukiSU, KernelSU, sing-box, dae, JamesDSP, rqlite, esp-idf** and others remain explicitly upstream-derived. Local work should preserve attribution and keep downstream deltas reviewable.
 
-The repository reorganization is complete under the maintained boundary above. Repositories intentionally left under `Zhanfg` remain there by design rather than as unfinished migration work.
+### boundary
 
-## Repository map
+The machine-readable authority is [repo-map.json](../repo-map.json). It classifies each repository as:
 
-Repositories are classified in the machine-readable [repo-map.json](../repo-map.json):
+`infra` · `source-base` · `upstream-fork` · `prototype` · `internal`
 
-- **infra** — build, deployment, content and organization infrastructure;
-- **source-base** — kernel/ROM/device/vendor/framework source bases and manifests;
-- **upstream-fork** — maintained/reference forks with upstream attribution preserved;
-- **prototype** — experimental applications, hardware and research work;
-- **internal** — private engineering components and supporting implementation repositories.
+That distinction is intentional: a mirrored or modified upstream repository is not presented as original project ownership, and a successful build is not treated as runtime validation.
 
-Repository-local policy files override organization defaults.
-
-## Engineering principles
-
-- Preserve upstream history and attribution.
-- Prefer reproducible builds and explicit validation.
-- Keep infrastructure separate from user-facing project identity.
-- Avoid credentials, private device data and unreleased material in public repositories.
-- Treat documentation, CI and rollback paths as part of the implementation.
-
-Main profile: [github.com/Zhanfg](https://github.com/Zhanfg) · Project hub: [axymorrsen.cc](https://axymorrsen.cc)
+<p align="center"><sub><a href="https://github.com/Zhanfg">main project surface</a> · <a href="https://axymorrsen.cc">axymorrsen.cc</a></sub></p>
