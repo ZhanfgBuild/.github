@@ -1,27 +1,22 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="270" viewBox="0 0 1200 270" role="img" aria-labelledby="title desc">
-<title id="title">ZHANFG / BUILD</title>
-<desc id="desc">SOURCE BASES · CI / RELEASE · TRACKED UPSTREAMS</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-labelledby="t d">
+<title id="t">ZHANFG BUILD</title><desc id="d">Source bases, build systems, tracked upstreams and release infrastructure.</desc>
 <style>
-  .bg{fill:#f6f6f2}.ink{fill:#151719}.muted{fill:#6b7278}.line{stroke:#d7d9d8}.accent{fill:#79654f}.ghost{fill:none;stroke:#151719;stroke-opacity:.09}.hair{stroke:#79654f}
-  @media (prefers-color-scheme:dark){.bg{fill:#0d0f10}.ink{fill:#ececea}.muted{fill:#8d9499}.line{stroke:#292c2e}.ghost{stroke:#ececea;stroke-opacity:.09}}
+.bg{fill:#f2f1ec}.ink{fill:#111315}.muted{fill:#6d706f}.hair{stroke:#ccc9c3}.accent{fill:#765e47}.accentLine{stroke:#765e47}
+@media(prefers-color-scheme:dark){.bg{fill:#0c0d0e}.ink{fill:#f0efe9}.muted{fill:#92908b}.hair{stroke:#2d2b29}.accent{fill:#a58a6f}.accentLine{stroke:#a58a6f}}
 </style>
-<defs><clipPath id="frame"><rect x="1" y="1" width="1198" height="268" rx="18"/></clipPath></defs>
-<g clip-path="url(#frame)">
-  <rect class="bg" width="1200" height="270"/>
-  <rect class="accent" x="0" y="0" width="7" height="270"/>
-  <line class="line" x1="52" y1="54" x2="1148" y2="54"/>
-  <text class="muted" x="54" y="42" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="11" letter-spacing="2.8">ENGINEERING ANNEX / 01</text>
-  <text class="ink" x="52" y="132" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="52" font-weight="620" letter-spacing="3.2">ZHANFG / BUILD</text>
-  <text class="muted" x="54" y="169" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="15" letter-spacing="1.15">SOURCE BASES · CI / RELEASE · TRACKED UPSTREAMS</text>
-  <line class="line" x1="52" y1="216" x2="1148" y2="216"/>
-  <rect class="accent" x="54" y="235" width="82" height="4" rx="2"/>
-  <rect class="accent" x="144" y="235" width="28" height="4" rx="2" opacity=".55"/>
-  <rect class="accent" x="180" y="235" width="12" height="4" rx="2" opacity=".3"/>
-  <text class="muted" x="205" y="241" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="10" letter-spacing="2">PUBLIC INDEX · 2026</text>
-  <text class="ghost" x="876" y="194" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="170" font-weight="700" stroke-width="2">01</text>
-  <line class="hair" x1="1096" y1="72" x2="1096" y2="194" stroke-width="2"/>
-  <circle class="accent" cx="1096" cy="72" r="3"/>
-  <circle class="accent" cx="1096" cy="194" r="3"/>
+<rect class="bg" width="1200" height="300"/>
+<text class="muted" x="52" y="33" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="10" letter-spacing="2.2">ENGINEERING ANNEX / BUILD SURFACE</text>
+<text class="ink" x="52" y="126" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="52" font-weight="650" letter-spacing="1.2">ZHANFG / BUILD</text>
+<text class="muted" x="54" y="161" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="15" letter-spacing=".75">SOURCE BASES · CI / RELEASE · TRACKED UPSTREAMS · INTERNAL TOOLING</text>
+<line class="hair" x1="52" y1="205" x2="1148" y2="205"/>
+<g transform="translate(702,67)" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="10">
+  <rect x="0" y="0" width="98" height="34" fill="none" class="hair"/><text class="muted" x="18" y="21">SOURCE</text>
+  <rect x="118" y="0" width="98" height="34" fill="none" class="hair"/><text class="muted" x="143" y="21">PATCH</text>
+  <rect x="236" y="0" width="98" height="34" fill="none" class="hair"/><text class="muted" x="255" y="21">VERIFY</text>
+  <rect x="354" y="0" width="98" height="34" fill="none" class="hair"/><text class="muted" x="372" y="21">RELEASE</text>
+  <line class="accentLine" x1="98" y1="17" x2="118" y2="17" stroke-width="2"/><line class="accentLine" x1="216" y1="17" x2="236" y2="17" stroke-width="2"/><line class="accentLine" x1="334" y1="17" x2="354" y2="17" stroke-width="2"/>
+  <circle class="accent" cx="108" cy="17" r="3"/><circle class="accent" cx="226" cy="17" r="3"/><circle class="accent" cx="344" cy="17" r="3"/>
 </g>
-<rect x="1" y="1" width="1198" height="268" rx="18" fill="none" class="line"/>
+<text class="muted" x="52" y="245" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="11" letter-spacing="1.2">not a product catalogue · provenance and downstream boundaries remain explicit</text>
+<rect class="accent" x="1111" y="230" width="37" height="37"/><rect class="bg" x="1120" y="239" width="19" height="19"/>
 </svg>
