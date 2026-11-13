@@ -12,7 +12,7 @@ elif [ -n "${1:-}" ]; then
   exit 2
 fi
 
-for cmd in gh jq; do
+for cmd in gh jq python3; do
   command -v "$cmd" >/dev/null 2>&1 || { echo "missing: $cmd" >&2; exit 1; }
 done
 
@@ -90,7 +90,11 @@ upsert_ruleset() {
     return 0
   fi
 
-  id="$(gh api "repos/$ORG/$repo/rulesets"       -H "X-GitHub-Api-Version: $API_VERSION" 2>/dev/null       | jq -r --arg n "$name" '.[] | select(.name==$n) | .id'       | head -n1 || true)"
+  rulesets_json="$(gh api "repos/$ORG/$repo/rulesets"       -H "X-GitHub-Api-Version: $API_VERSION")" || {
+    echo "  ERROR: failed to list rulesets for $ORG/$repo" >&2
+    return 1
+  }
+  id="$(printf '%s' "$rulesets_json" | jq -r --arg n "$name" '.[] | select(.name==$n) | .id' | head -n1)"
 
   if [ -n "$id" ]; then
     method="PUT"
